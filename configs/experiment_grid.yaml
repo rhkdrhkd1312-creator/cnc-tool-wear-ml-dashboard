@@ -1,0 +1,131 @@
+levels:
+  L0:
+    description: Dummy baseline
+    grid:
+      missing: [none]
+      outlier: [none]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [none]
+      model: [dummy]
+      hpo: [default]
+      threshold: [fixed]
+  L1:
+    description: Logistic + scaler compare
+    grid:
+      missing: [median]
+      outlier: [none]
+      feature_set: [sensor_global]
+      scaler: [none, standard, robust]
+      sampling: [none]
+      model: [logistic]
+      hpo: [default]
+      threshold: [fixed]
+  L2:
+    description: Outlier strategies with XGBoost
+    grid:
+      missing: [median]
+      outlier: [none, doc_rule, "doc_rule + iqr_1.5", "doc_rule + zscore_3"]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [none]
+      model: [xgboost]
+      hpo: [default]
+      threshold: [fixed]
+  L3:
+    description: Missing impute strategies
+    grid:
+      missing: [none, median, mean, knn_5, drop_high_missing]
+      outlier: [doc_rule]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [none]
+      model: [xgboost]
+      hpo: [default]
+      threshold: [fixed]
+  L4:
+    description: Feature set compare
+    grid:
+      missing: [median]
+      outlier: [doc_rule]
+      feature_set: [minimal, sensor_global, sensor_phase, full]
+      scaler: [none]
+      sampling: [none]
+      model: [xgboost]
+      hpo: [default]
+      threshold: [fixed]
+  L5:
+    description: Sampling / imbalance
+    grid:
+      missing: [median]
+      outlier: [doc_rule]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [none, class_weight, smote, borderline_smote, adasyn, rus_smote, tomek_smote]
+      model: [xgboost]
+      hpo: [default]
+      threshold: [fixed]
+  L6:
+    description: Model selection
+    grid:
+      missing: [median]
+      outlier: [doc_rule]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [class_weight]
+      model: [logistic, random_forest, xgboost, lightgbm, svc]
+      hpo: [default]
+      threshold: [fixed]
+  L7:
+    description: HPO on top models
+    grid:
+      missing: [median]
+      outlier: [doc_rule]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [class_weight]
+      model: [xgboost, lightgbm]
+      hpo: [optuna_30]
+      threshold: [fixed]
+  L8:
+    description: Threshold tuning
+    grid:
+      missing: [median]
+      outlier: [doc_rule]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [class_weight]
+      model: [xgboost]
+      hpo: [default]
+      threshold: [fixed, recall_target, youden]
+  L9:
+    description: Ensemble top-2
+    grid:
+      missing: [median]
+      outlier: [doc_rule]
+      feature_set: [sensor_global]
+      scaler: [none]
+      sampling: [class_weight]
+      model: [ensemble]
+      hpo: [default]
+      threshold: [recall_target]
+  L10:
+    description: LOEO sanity check
+    mode: loeo
+    base_config:
+      missing: median
+      outlier: doc_rule
+      feature_set: sensor_global
+      scaler: none
+      sampling: class_weight
+      model: xgboost
+      hpo: default
+      threshold: recall_target
+
+hpo:
+  optuna_30:
+    n_trials: 30
+    inner_folds: 3
+  optuna_50:
+    n_trials: 50
+    inner_folds: 3

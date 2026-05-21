@@ -1,0 +1,11 @@
+extra: null
+feature_set: sensor_global
+hpo: default
+level: L9
+missing: median
+model: ensemble
+outlier: doc_rule
+sampling: class_weight
+scaler: none
+threshold: '0.92'
+threshold_value: 0.5

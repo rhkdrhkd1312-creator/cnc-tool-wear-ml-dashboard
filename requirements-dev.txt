@@ -1,0 +1,9 @@
+# Local development — full ML pipeline + dashboard
+-r requirements.txt
+kaggle
+imbalanced-learn
+optuna
+matplotlib
+seaborn
+shap
+jupyter

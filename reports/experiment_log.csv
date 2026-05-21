@@ -1,0 +1,128 @@
+run_id,level,missing,outlier,feature_set,scaler,sampling,model,hpo,threshold,extra,fold,f1,recall,precision,roc_auc,fn_count,fp_count,brier
+run_0001,L0,none,none,sensor_global,none,none,dummy,default,0.5,,0,0.0,0.0,0.0,0.25,2,1,0.75
+run_0001,L0,none,none,sensor_global,none,none,dummy,default,0.5,,1,0.0,0.0,0.0,0.25,2,1,0.75
+run_0001,L0,none,none,sensor_global,none,none,dummy,default,0.5,,2,0.0,0.0,0.0,0.25,2,1,0.75
+run_0001,L0,none,none,sensor_global,none,none,dummy,default,0.5,,3,0.6666666666666666,0.5,1.0,0.75,1,0,0.3333333333333333
+run_0001,L0,none,none,sensor_global,none,none,dummy,default,0.5,,4,0.0,0.0,0.0,0.0,2,1,1.0
+run_0001,L0,none,none,sensor_global,none,none,dummy,default,0.5,,oof,0.13333333333333333,0.1,0.2,0.30000000000000004,9,4,0.7222222222222222
+run_0002,L1,median,none,sensor_global,none,none,logistic,default,0.5,,0,0.4,0.5,0.3333333333333333,0.25,1,2,0.6248399876374221
+run_0002,L1,median,none,sensor_global,none,none,logistic,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,2.0739858971238098e-13
+run_0002,L1,median,none,sensor_global,none,none,logistic,default,0.5,,2,0.6666666666666666,1.0,0.5,0.75,0,2,0.486722415508413
+run_0002,L1,median,none,sensor_global,none,none,logistic,default,0.5,,3,0.0,0.0,0.0,0.5,2,0,0.6652317724444491
+run_0002,L1,median,none,sensor_global,none,none,logistic,default,0.5,,4,0.5,0.5,0.5,0.0,1,1,0.6666666638293993
+run_0002,L1,median,none,sensor_global,none,none,logistic,default,0.5,,oof,0.5714285714285714,0.6,0.5454545454545454,0.55,4,5,0.46899694007809534
+run_0003,L1,median,none,sensor_global,standard,none,logistic,default,0.5,,0,0.6666666666666666,1.0,0.5,0.75,0,2,0.3666835412132502
+run_0003,L1,median,none,sensor_global,standard,none,logistic,default,0.5,,1,0.5,0.5,0.5,0.75,1,1,0.36247468356032964
+run_0003,L1,median,none,sensor_global,standard,none,logistic,default,0.5,,2,0.6666666666666666,1.0,0.5,0.5,0,2,0.44609397470624723
+run_0003,L1,median,none,sensor_global,standard,none,logistic,default,0.5,,3,0.0,0.0,0.0,0.5,2,0,0.4118216054271733
+run_0003,L1,median,none,sensor_global,standard,none,logistic,default,0.5,,4,0.5,0.5,0.5,0.0,1,1,0.4863221835870801
+run_0003,L1,median,none,sensor_global,standard,none,logistic,default,0.5,,oof,0.5454545454545454,0.6,0.5,0.5,4,6,0.41085778694233716
+run_0004,L1,median,none,sensor_global,robust,none,logistic,default,0.5,,0,0.6666666666666666,1.0,0.5,0.5,0,2,0.46122903705410595
+run_0004,L1,median,none,sensor_global,robust,none,logistic,default,0.5,,1,0.0,0.0,0.0,0.5,2,1,0.629250631630732
+run_0004,L1,median,none,sensor_global,robust,none,logistic,default,0.5,,2,0.6666666666666666,1.0,0.5,1.0,0,2,0.25481068142467095
+run_0004,L1,median,none,sensor_global,robust,none,logistic,default,0.5,,3,0.6666666666666666,0.5,1.0,1.0,1,0,0.1737188097159407
+run_0004,L1,median,none,sensor_global,robust,none,logistic,default,0.5,,4,0.5,0.5,0.5,0.0,1,1,0.5532514768142809
+run_0004,L1,median,none,sensor_global,robust,none,logistic,default,0.5,,oof,0.5454545454545454,0.6,0.5,0.5125000000000001,4,6,0.4201151255571501
+run_0005,L2,median,none,sensor_global,none,none,xgboost,default,0.5,,0,0.6666666666666666,1.0,0.5,0.5,0,2,0.30335158109664917
+run_0005,L2,median,none,sensor_global,none,none,xgboost,default,0.5,,1,0.0,0.0,0.0,0.5,2,0,0.3100035786628723
+run_0005,L2,median,none,sensor_global,none,none,xgboost,default,0.5,,2,0.6666666666666666,1.0,0.5,0.25,0,2,0.3011937439441681
+run_0005,L2,median,none,sensor_global,none,none,xgboost,default,0.5,,3,0.0,0.0,0.0,0.5,2,0,0.48524609208106995
+run_0005,L2,median,none,sensor_global,none,none,xgboost,default,0.5,,4,0.0,0.0,0.0,0.5,2,0,0.2994800806045532
+run_0005,L2,median,none,sensor_global,none,none,xgboost,default,0.5,,oof,0.4444444444444444,0.4,0.5,0.475,6,4,0.33402079883302493
+run_0006,L2,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0006,L2,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0006,L2,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0006,L2,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0006,L2,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0006,L2,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0007,L2,median,doc_rule + iqr_1.5,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0007,L2,median,doc_rule + iqr_1.5,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0007,L2,median,doc_rule + iqr_1.5,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0007,L2,median,doc_rule + iqr_1.5,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0007,L2,median,doc_rule + iqr_1.5,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0007,L2,median,doc_rule + iqr_1.5,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0008,L2,median,doc_rule + zscore_3,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0008,L2,median,doc_rule + zscore_3,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0008,L2,median,doc_rule + zscore_3,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0008,L2,median,doc_rule + zscore_3,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0008,L2,median,doc_rule + zscore_3,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0008,L2,median,doc_rule + zscore_3,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0009,L3,none,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0009,L3,none,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0009,L3,none,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0009,L3,none,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0009,L3,none,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0009,L3,none,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0010,L3,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0010,L3,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0010,L3,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0010,L3,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0010,L3,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0010,L3,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0011,L3,mean,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0011,L3,mean,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0011,L3,mean,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0011,L3,mean,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0011,L3,mean,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0011,L3,mean,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0012,L3,knn_5,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0012,L3,knn_5,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0012,L3,knn_5,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0012,L3,knn_5,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0012,L3,knn_5,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0012,L3,knn_5,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0013,L3,drop_high_missing,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0013,L3,drop_high_missing,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0013,L3,drop_high_missing,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0013,L3,drop_high_missing,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0013,L3,drop_high_missing,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0013,L3,drop_high_missing,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0014,L4,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0014,L4,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0014,L4,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0014,L4,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0014,L4,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0014,L4,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0015,L5,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0015,L5,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0015,L5,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0015,L5,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0015,L5,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0015,L5,median,doc_rule,sensor_global,none,none,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0016,L6,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0016,L6,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0016,L6,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0016,L6,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0016,L6,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0016,L6,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0017,L7,median,doc_rule,sensor_global,none,class_weight,xgboost,optuna_30,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0017,L7,median,doc_rule,sensor_global,none,class_weight,xgboost,optuna_30,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0017,L7,median,doc_rule,sensor_global,none,class_weight,xgboost,optuna_30,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0017,L7,median,doc_rule,sensor_global,none,class_weight,xgboost,optuna_30,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0017,L7,median,doc_rule,sensor_global,none,class_weight,xgboost,optuna_30,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0017,L7,median,doc_rule,sensor_global,none,class_weight,xgboost,optuna_30,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0018,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0018,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0018,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0018,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0018,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0018,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.5,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0019,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.85,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0019,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.85,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0019,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.85,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0019,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.85,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0019,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.85,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0019,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.85,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0020,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.8511528968811035,,0,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0020,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.8511528968811035,,1,1.0,1.0,1.0,1.0,0,0,0.03077153116464615
+run_0020,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.8511528968811035,,2,1.0,1.0,1.0,1.0,0,0,0.030771529302001
+run_0020,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.8512741923332214,,3,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0020,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.8512741923332214,,4,1.0,1.0,1.0,1.0,0,0,0.024376465007662773
+run_0020,L8,median,doc_rule,sensor_global,none,class_weight,xgboost,default,0.8511528968811035,,oof,1.0,1.0,1.0,1.0,0,0,0.028639842101948428
+run_0021,L9,median,doc_rule,sensor_global,none,class_weight,ensemble,default,0.92,,0,1.0,1.0,1.0,1.0,0,0,0.007705204021096601
+run_0021,L9,median,doc_rule,sensor_global,none,class_weight,ensemble,default,0.92,,1,1.0,1.0,1.0,1.0,0,0,0.007705204021096602
+run_0021,L9,median,doc_rule,sensor_global,none,class_weight,ensemble,default,0.92,,2,1.0,1.0,1.0,1.0,0,0,0.007705204021096602
+run_0021,L9,median,doc_rule,sensor_global,none,class_weight,ensemble,default,0.92,,3,1.0,1.0,1.0,1.0,0,0,0.006104119394674426
+run_0021,L9,median,doc_rule,sensor_global,none,class_weight,ensemble,default,0.92,,4,1.0,1.0,1.0,1.0,0,0,0.006104119394674426
+run_0021,L9,median,doc_rule,sensor_global,none,class_weight,ensemble,default,0.92,,oof,1.0,1.0,1.0,1.0,0,0,0.007171509145622544
+run_0022,L10,median,doc_rule,sensor_global,none,class_weight,xgboost,default,recall_target,,loeo,1.0,1.0,1.0,1.0,0,0,0.02101624198257923
